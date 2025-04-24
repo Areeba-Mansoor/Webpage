@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(./WhatsApp\ Image\ 2025-04-23\ at\ 22.59.06_aed652da.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  margin: 10px 5px;
+}
+
+nav h3 {
+  font: 2em sans-serif;
+  font-weight: 800;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+nav li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+nav li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  margin-right: 1.5rem;
+}
+
+nav li a:hover {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .heading {
+  margin-top: 7rem;
+  font: 3em sans-serif;
+  font-weight: 600;
+  color: rgb(48, 88, 207);
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+
+section .heading_2 {
+  font: 3em sans-serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+
+section .para {
+  margin-left: 1rem;
+  margin-top: 2rem;
+  font: 16px sans-serif;
+  line-height: 1.8;
+  font-weight: 600;
+  overflow-x: hidden;
+}
+
+section button {
+  padding: 15px 30px;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(11, 107, 107);
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.3rem 0.5rem rgb(48, 48, 48);
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  transition: transform 0.5s ease;
+}
+
+section button:hover {
+  transform: scale(0.9);
+  color: blue;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 7rem;
+  margin-right: 10px;
+  margin-bottom: 2rem;
+}
+
+.social-links img {
+  width: 35px;
+  margin-left: 50px;
+  cursor: pointer;
+  transition: transform 0.7s ease;
+}
+.social-links img:hover{
+    transform: translateY(-30%);
+}
+
+@media (max-width: 768px) {
+  nav h3 {
+    font-size: 1.4rem;
+  }
+  nav li {
+    font-size: 0.8rem;
+  }
+  nav li a{
+    font-size: 14px;
+    margin-right: 0.5rem;
+  }
+}
