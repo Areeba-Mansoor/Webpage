@@ -10,39 +10,40 @@ body {
   background-image: url(./background.jpg);
   background-position: center;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 1rem 0.5rem;
-  margin: 10px 5px;
+  padding: 0.5rem 1rem;
 }
 
 nav h3 {
   font: 2em sans-serif;
   font-weight: 800;
-  margin-left: 0.5rem;
+  margin-left: 0.5em;
   text-transform: uppercase;
 }
 
 nav ul {
   display: flex;
   justify-content: space-between;
-  gap: 5px;
+  gap: 20px;
 }
 
 nav li {
   list-style: none;
-  font-size: 1.2rem;
+  margin-left: 1em;
 }
 
 nav li a {
   text-decoration: none;
   font-weight: 500;
+  font-size: 1.2rem;
   color: black;
-  margin-right: 1.5rem;
 }
 
 nav li a:hover {
@@ -61,7 +62,7 @@ section .heading {
   font-weight: 600;
   color: rgb(48, 88, 207);
   text-transform: uppercase;
-  margin-left: 1rem;
+  margin-left: 0.5em;
 }
 
 section .heading_2 {
@@ -69,16 +70,15 @@ section .heading_2 {
   font-weight: 600;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
-  margin-left: 1rem;
+  margin-left: 0.5em;
 }
 
 section .para {
-  margin-left: 1rem;
-  margin-top: 2rem;
+  margin-left: 1.5em;
+  margin-top: 2em;
   font: 16px sans-serif;
   line-height: 1.8;
   font-weight: 600;
-  overflow-x: hidden;
 }
 
 section button {
@@ -90,8 +90,8 @@ section button {
   border-radius: 0.3rem;
   box-shadow: 0 0.3rem 0.5rem rgb(48, 48, 48);
   cursor: pointer;
-  margin-left: 1rem;
-  margin-top: 2rem;
+  margin-left: 2em;
+  margin-top: 2em;
   transition: transform 0.5s ease;
 }
 
@@ -109,23 +109,19 @@ section button:hover {
 
 .social-links img {
   width: 30px;
-  margin-left: 50px;
+  margin-left: 20px;
   cursor: pointer;
   transition: transform 0.7s ease;
 }
-.social-links img:hover{
-    transform: translateY(-30%);
+.social-links img:hover {
+  transform: translateY(-30%);
 }
 
 @media (max-width: 768px) {
-  nav h3 {
-    font-size: 1.4rem;
+  nav li a {
+    font-size: 0.9rem;
   }
-  nav li {
-    font-size: 0.8rem;
-  }
-  nav li a{
-    font-size: 14px;
-    margin-right: 0.5rem;
+  section button{
+    padding: 12px 20px;
   }
 }
